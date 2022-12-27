@@ -20,18 +20,17 @@ router.get('/', function(req, res, next) {
 });
 /* GET form page */
 router.get("/new",function(req,res,next){
-  res.render("form")
+  res.render("form", {form: "Fill Out The Form"})
   next()
 });
 
 router.post("/new",function(res,req,next){
   messages.push({
-    text: req.body.message,
-    user: req.body.name,
+    text: req.body.messageText,
+    user: req.body.nameText,
     added: new Date() 
   })
   res.redirect("/")
-  next()
 });
 
 module.exports = router;
