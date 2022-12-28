@@ -5,5 +5,5 @@ block content
   p Welcome to #{title}
   ul 
     each message in messages.length ? messages : ['No messages']
-      li= messages.message.user && messages.message.text
+      li= message.user && message.text
   a(href="/new") Enter New Message
