@@ -24,7 +24,7 @@ router.get("/new",function(req,res){
 
 router.post("/new",function(res,req,next){
   const messageText = req.body.messageText;
-  const nameText = req.body.nameText;
+  const nameText = req.body.userText;
   messages.push({
     text: messageText,
     user: nameText,
