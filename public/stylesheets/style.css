@@ -9,5 +9,5 @@ a {
 .struct{
   display:flex;
   flex-direction: column;
-  width:5rem;
+  width:15rem;
 }
