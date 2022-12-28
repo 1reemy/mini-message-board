@@ -5,5 +5,5 @@ block content
   p Welcome to #{title}
   ul 
     each message in messages.length ? messages : ['No messages']
-      li= {message.user, message.text}
+      li= JSON.stringify(message)
   a(href="/new") Enter New Message
