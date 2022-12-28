@@ -19,7 +19,7 @@ router.get('/', function(req, res) {
 });
 /* GET form page */
 router.get("/new",function(req,res){
-  res.render('new', { title: 'Fill Out The Form' });
+  res.render('form', { title: 'Fill Out The Form' });
 });
 
 router.post("/new",function(res,req,next){
