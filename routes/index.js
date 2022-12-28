@@ -23,9 +23,11 @@ router.get("/new",function(req,res){
 });
 
 router.post("/new",function(res,req,next){
+  const messageText = req.body.messageText;
+  const nameText = req.body.nameText;
   messages.push({
-    text: req.body.messageText,
-    user: req.body.nameText,
+    text: messageText,
+    user: nameText,
     added: new Date() 
   })
   res.redirect("/")
