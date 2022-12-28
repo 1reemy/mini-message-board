@@ -3,6 +3,7 @@ extends layout
 block content 
  h1= title 
  form(action="/new" method="POST") 
+    div(class="struct")
         input(type="text", name="userText" placeholder="name")
         textarea(type="text", name="messageText" placeholder="message" cols="30" rows="10")
         input(type="submit", value="Submit")
