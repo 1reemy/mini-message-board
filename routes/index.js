@@ -29,7 +29,7 @@ router.post("/new",function(res,req,next){
     text: messageText,
     user: nameText,
     added: new Date() 
-  })
+  });
   res.redirect("/")
 });
 
