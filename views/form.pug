@@ -2,7 +2,7 @@ extends layout
 
 block content 
  h1= title 
- form(action="/new", method="post") 
+ form(action="/new", method="POST") 
         input(type="text", name="nameText" placeholder="name")
         input(type="text", name="messageText" placeholder="message")
         input(type="submit", value="Submit")
