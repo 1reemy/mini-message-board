@@ -4,6 +4,7 @@ block content
   h1= title
   p Welcome to #{title}
   ul 
-    each message in messages.length ? messages : ['No messages']
+    each message in messages.length ? messages : messages.forEach((message)=>{
       li= message
+    })      
   a(href="/new") Enter New Message
