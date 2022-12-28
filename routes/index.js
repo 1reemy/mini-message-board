@@ -23,8 +23,8 @@ router.get("/new",function(req,res){
 });
 
 router.post("/new",function(res,req,next){  
-  const nameText = req.body.userText;
-  const messageText = req.body.messageText;
+  const nameText = req.body.userText.toString();
+  const messageText = req.body.messageText.toString();
   messages.push({
     text: messageText,
     user: nameText,
