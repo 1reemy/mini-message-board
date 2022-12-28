@@ -14,14 +14,12 @@ const messages = [
   }  
 ]
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', function(req, res) {
   res.render('index', { title: 'Mini Messageboard', messages:messages });
-  next()
 });
 /* GET form page */
-router.get("/new",function(req,res,next){
+router.get("/new",function(req,res){
   res.render('form', {title: 'Fill Out The Form'})
-  next()
 });
 
 router.post("/new",function(res,req,next){
